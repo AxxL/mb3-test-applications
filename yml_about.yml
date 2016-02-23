@@ -1,9 +1,9 @@
 parameters:
     applications:
-        yml_featureinfo:
-            title: yml_featureinfo
+        yml_about:
+            title: yml_about
             screenshot:
-            description: "YML Test FeatureInfo"
+            description: "YML Test About Dialog in toolbar"
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen
             regionProperties:
@@ -51,15 +51,12 @@ parameters:
                         opacity: 100
             elements:
                 toolbar:
-                    fi-button:
-                        title: Feature Info
-                        tooltip: Feature Info
-                        class: Mapbender\CoreBundle\Element\Button
-                        icon: iconInfoActive
+                    about:
+                        title: About
+                        tooltip: About
                         label: true
-                        target: featureinfo
-                        deactivate: deactivate
-                        group: featureinfo
+                        icon: icon-about
+                        class: Mapbender\CoreBundle\Element\AboutDialog
                 content:
                     map:
                         title: Main Map
@@ -83,20 +80,6 @@ parameters:
                         anchor: right-top
                         position: [200,40]
                         draggable: false
-                    featureinfo:
-                        class: Mapbender\CoreBundle\Element\FeatureInfo
-                        title: FeatureInfo
-                        tooltip: 'Feature Info Dialog'
-                        type: dialog
-                        target: map
-                        autoActivate: false
-                        deactivateOnClose: false
-                        onlyValid: true
-                        displayType: tabs
-                        printResult: true
-                        showOriginal: true
-                        width: 500
-                        height: 500
                 sidepane:
                     layertree:
                         title: Layertree
@@ -138,3 +121,14 @@ parameters:
                         tooltip: Scale Selector
                         label: false
                         target: map
+                    copyrightButton:
+                        title: © OpenStreetMap contributors
+                        tooltip: Line Ruler
+                        class: Mapbender\CoreBundle\Element\Button
+                        label: true
+                        click: http://www.openstreetmap.org/copyright
+                    HTML:
+                        title: HTML
+                        class: Mapbender\CoreBundle\Element\HTMLElement
+                        content: '<div style="color: #6FB536; font-weight:bold" >powered by Mapbender</div>'
+                        classes: html-element-inline

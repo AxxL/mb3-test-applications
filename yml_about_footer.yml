@@ -1,9 +1,9 @@
 parameters:
     applications:
-        yml_about_html:
-            title: yml_about_html
-            screenshot: 'mapbender_user.png'
-            description: "YML Test About Dialog in sidepane, HTML and Button in footer"
+        yml_about_footer:
+            title: yml_about_footer
+            screenshot:
+            description: "YML Test About Dialog in footer"
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen
             regionProperties:
@@ -51,12 +51,12 @@ parameters:
                         opacity: 100
             elements:
                 toolbar:
-                    about:
-                        title: About
-                        tooltip: About
-                        label: true
-                        icon: icon-about
-                        class: Mapbender\CoreBundle\Element\AboutDialog
+                    # about:
+                    #     title: About
+                    #     tooltip: About
+                    #     label: true
+                    #     icon: icon-about
+                    #     class: Mapbender\CoreBundle\Element\AboutDialog
                 content:
                     map:
                         title: Main Map
@@ -94,6 +94,12 @@ parameters:
                         layerRemove: true
                         menu: [opacity,zoomtolayer,metadata]
                 footer:
+                    about:
+                        title: About
+                        tooltip: About
+                        label: true
+                        icon: icon-about
+                        class: Mapbender\CoreBundle\Element\AboutDialog
                     activityindicator:
                         class: Mapbender\CoreBundle\Element\ActivityIndicator
                         title: Activity Indicator
