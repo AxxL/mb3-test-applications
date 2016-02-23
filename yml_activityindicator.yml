@@ -2,7 +2,7 @@ parameters:
     applications:
         yml_Activity_Indicator:
             title: yml_Activity_Indicator
-            screenshot: 'mapbender_user.png'
+            screenshot: 
             description: "YML Test Activity Indicator."
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen

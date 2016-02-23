@@ -2,7 +2,7 @@ parameters:
     applications:
         yml_print:
             title: yml_Print
-            screenshot: 'mapbender_user.png'
+            screenshot: 
             description: "YML Test Print"
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen

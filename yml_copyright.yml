@@ -2,7 +2,7 @@ parameters:
     applications:
         yml_copyright:
             title: yml_Copyright
-            screenshot: 'mapbender_user.png'
+            screenshot: 
             description: "YML Test Copyright"
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen

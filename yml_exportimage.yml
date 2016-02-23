@@ -2,7 +2,7 @@ parameters:
     applications:
         yml_Export_Image:
             title: yml_Export_Image
-            screenshot: 'mapbender_user.png'
+            screenshot: 
             description: "YML Test Export Image."
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen
