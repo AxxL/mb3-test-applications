@@ -37,6 +37,8 @@ parameters:
                         transparent: true
                         tiled: true
                         opacity: 100
+                        id: 1
+                        basesource: true
                 test:
                     osm:
                         class: Mapbender\WmsBundle\Entity\WmsInstance
@@ -50,6 +52,8 @@ parameters:
                         transparent: true
                         tiled: true
                         opacity: 30
+                        id: 2
+                        basesource: true
                 overview:
                     osm_overview:
                         class: Mapbender\WmsBundle\Entity\WmsInstance
@@ -64,14 +68,14 @@ parameters:
                         opacity: 100
             elements:
                 toolbar:
-#                        title: 'Change Background'
-#                        class: Mapbender\CoreBundle\Element\BaseSourceSwitcher
-#                        tooltip: BaseSourceSwitcher
-#                        target: map      
-#                        sourcesets: 
-#                            - { title: no Background, group: Background,sources: []}
-#                            - { title: OSM Opacity, group: Background,sources: []}
-#                            - { title: OSM, group: Background,sources: []}
+#                    title: 'Change Background'
+#                    class: Mapbender\CoreBundle\Element\BaseSourceSwitcher
+#                    tooltip: BaseSourceSwitcher
+#                    target: map
+#                    sourcesets: 
+#                        - { title: OSM, group: Background, sources: [main]}
+#                        - { title: OSM Opacity, group: Background,sources: [test]}
+#                        - { title: no Background, group: Background,sources: []}
                 content:
                     map:
                         title: Main Map

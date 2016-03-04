@@ -1,7 +1,7 @@
 parameters:
     applications:
         yml_print:
-            title: yml_Print
+            title: yml_print
             screenshot: 
             description: "YML Test Print"
             published: true

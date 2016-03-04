@@ -2,7 +2,7 @@ parameters:
     applications:
         yml_redlining:
             title: yml_redlining
-            screenshot: 'mapbender_user.png'
+            screenshot: ''
             description: "YML Test Redlining in Sidepane"
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen
