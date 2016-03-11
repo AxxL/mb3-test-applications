@@ -2,7 +2,7 @@ parameters:
     applications:
         yml_gpsposition:
             title: yml_gpsposition
-            screenshot: 'mapbender_user.png'
+            screenshot: ''
             description: "YML Test GPS position"
             published: true
             template:  Mapbender\CoreBundle\Template\Fullscreen
@@ -52,21 +52,20 @@ parameters:
             elements:
                 toolbar:
                     gps-button:
-                        title: GPS-Position
-                        tooltip: Show GPS Position
                         class: Mapbender\CoreBundle\Element\GpsPosition
                         label: true
                         autoStart: false
+                        title: GPS-Position
+                        tooltip: Show GPS Position
+                        icon: iconGpsTarget
                         target: map
-                        action: null
-                        refreshinterval: '5000'
                         average: '1'
-                        follow: false
+                        refreshinterval: '5000'
+                        follow: true
+                        action: null
                         centerOnFirstPosition: true
                         zoomToAccuracy: false
                         zoomToAccuracyOnFirstPosition: true
-                        icon: iconGpsTarget
-                        title: GPS-Position
                 content:
                     map:
                         title: Main Map
